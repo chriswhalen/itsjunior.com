@@ -68,6 +68,7 @@ body {
     font-family: 'News Cycle', sans-serif;
     font-size: 1.6em;
     min-height: 100vh;
+    text-rendering: optimizeLegibility;
     transition: background 8s linear;
 }
 
@@ -81,8 +82,9 @@ img {
 
 h1 {
     font-family: Gaegu, sans-serif;
-    font-size: 2.4em;
-    letter-spacing: -0.1em;
+    font-size: 2.56em;
+    letter-spacing: -0.064em;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 code, pre {
