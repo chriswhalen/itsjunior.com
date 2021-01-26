@@ -150,7 +150,7 @@ pre {
     margin: 1em;
     padding: 0.75em 1em;
     text-decoration: none;
-    transition: margin 0.32s ease-in-out;
+    transition: margin 0.24s ease-out;
     user-select: none;
     width: 4em;
 }
