@@ -89,7 +89,7 @@ p {
     margin-top: 1em;
 }
 
-img {
+img, br {
     user-select: none;
 }
 
