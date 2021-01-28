@@ -167,6 +167,7 @@ pre {
     display: block;
     font-size: 1.25em;
     padding: 2em 4em 2em 0;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .panel {
@@ -198,6 +199,7 @@ pre {
     margin-bottom: 0.25em;
     opacity: 0.5;
     text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .button span {
@@ -206,6 +208,7 @@ pre {
     line-height: 1em;
     opacity: 0.75;
     text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .button b {
