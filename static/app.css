@@ -214,7 +214,7 @@ pre {
 }
 
 .buttons {
-    margin-left: -5vw;
+    margin: 0 0 0 -5vw;
     text-align: center;
     user-select: none;
 }
@@ -232,7 +232,7 @@ pre {
     }
 
     .buttons {
-        margin-left: 0;
+        margin: 0 0 2em 0;
     }
 
     .description {
