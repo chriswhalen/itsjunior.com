@@ -56,6 +56,18 @@
 }
 .fab { font-family: 'Font Awesome Brands'; }
 
+::-webkit-scrollbar {
+    background: #16161f;
+    height: 4px;
+    margin-left: 6px;
+    width: 4px;
+}
+
+::-webkit-scrollbar-corner { background: #16161f; }
+
+::-webkit-scrollbar-thumb { background: #363646; }
+
+:focus { outline: none; }
 
 * {
     margin: 0;
@@ -66,7 +78,7 @@ body {
     background: #16161f;
     color: #e6e6e6;
     font-family: 'News Cycle', sans-serif;
-    font-size: 1.6em;
+    font-size: 1.44em;
     font-weight: 300;
     min-height: 100vh;
     text-rendering: optimizeLegibility;
@@ -81,6 +93,11 @@ img {
     user-select: none;
 }
 
+a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
 h1 {
     font-family: Gaegu, sans-serif;
     font-size: 2.56em;
@@ -88,16 +105,18 @@ h1 {
     mix-blend-mode: luminosity;
     opacity: 0.8;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+    user-select: none;
 }
 
 code, pre {
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
+    border-radius: 2px;
     font-family: Inconsolata, monospace;
     padding: 0.08em 0.2em;
 }
 
 pre {
+    line-height: 0.6em;
     padding: 0.5em;
 }
 
@@ -107,20 +126,29 @@ pre {
 
 .hide { display: none; }
 
-.dim { opacity: 0.25; }
+.dim {
+    opacity: 0.25;
+    user-select: none;
+}
 
 .page {
     box-sizing: border-box;
     display: table-cell;
     height: 100vh;
-    padding: 4em;
+    padding: 4vw;
     vertical-align: middle;
     width: 100vw;
+}
+
+.half {
+    box-sizing: border-box;
+    max-width: 44vw;
 }
 
 .title {
     font-size: 12em;
     letter-spacing: -0.12em;
+    margin-top: -0.25em;
     text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
     user-select: none;
 }
@@ -135,6 +163,12 @@ pre {
     user-select: none;
 }
 
+.description {
+    display: block;
+    font-size: 1.25em;
+    padding: 2em 4em 2em 0;
+}
+
 .panel {
     background: rgba(0, 0, 0, 0.25);
     border-radius: 12px;
@@ -144,30 +178,31 @@ pre {
 .button {
     background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
     color: #fff;
     display: inline-block;
-    margin: 1em;
-    padding: 0.75em 1em;
+    margin: 1.5em;
+    padding: 1em;
     text-decoration: none;
-    transition: margin 0.24s ease-out;
-    user-select: none;
-    width: 4em;
+    transition: box-shadow 0.24s ease-out;
+    width: 6em;
 }
 
 .button:hover{
-    margin-top: 0.75em;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .button i {
     display: block;
     font-size: 3em;
+    margin-bottom: 0.25em;
     opacity: 0.5;
     text-align: center;
 }
 
 .button span {
     display: block;
+    font-size:1.2em;
     line-height: 1em;
     opacity: 0.75;
     text-align: center;
@@ -179,19 +214,28 @@ pre {
 }
 
 .buttons {
-    padding: 4em 2em;
+    margin-left: -5vw;
     text-align: center;
+    user-select: none;
 }
 
-::-webkit-scrollbar {
-    background: #16161f;
-    height: 4px;
-    margin-left: 6px;
-    width: 4px;
+@media (max-width: 1024px) {
+
+    .page {
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .half {
+        max-width: 90vw;
+        width: 90vw;
+    }
+
+    .buttons {
+        margin-left: 0;
+    }
+
+    .description {
+        padding: 2em 0;
+    }
 }
-
-::-webkit-scrollbar-corner { background: #16161f; }
-
-::-webkit-scrollbar-thumb { background: #363646; }
-
-:focus { outline: none; }
