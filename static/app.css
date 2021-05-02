@@ -96,6 +96,11 @@ img, br {
 a {
     color:#ffffff;
     text-decoration: none;
+    transition: all 0.24s ease;
+}
+
+a:hover {
+    transform: scale(1.12);
 }
 
 h1 {
